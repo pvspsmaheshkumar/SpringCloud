@@ -1,0 +1,10 @@
+---
+applications:
+- name: calendar-info-service
+  memory: 1024M
+  instances: 1
+  path: ./target/CalendarService.jar
+  env: 
+    SPRING_PROFILES_ACTIVE : 'dev'
+    CONFIG_SERVER_URL: 'http://localhost:8888/'
+    
